@@ -45,7 +45,21 @@ public class TestDaw : MonoBehaviour {
         }
     }
 
-	void Start () {
+    public void SetOnly1Sampler(bool val)
+    {
+        if (val)
+        {
+            _material1024.EnableKeyword("Only1Sampler");
+            _material2048.EnableKeyword("Only1Sampler");
+        }
+        else
+        {
+            _material1024.DisableKeyword("Only1Sampler");
+            _material2048.DisableKeyword("Only1Sampler");
+        }
+    }
+
+    void Start () {
 
         Application.targetFrameRate = 1000;
         batchCount = 1;
@@ -57,6 +71,8 @@ public class TestDaw : MonoBehaviour {
         _material2048.DisableKeyword("ForceLod3");
         _material1024.DisableKeyword("EnableClip");
         _material2048.DisableKeyword("EnableClip");
+        _material1024.DisableKeyword("Only1Sampler");
+        _material2048.DisableKeyword("Only1Sampler");
 
 
         _matrixies = new Matrix4x4[CountPerBatch];

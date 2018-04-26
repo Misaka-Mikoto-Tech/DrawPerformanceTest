@@ -11,6 +11,7 @@ public class UIHandler : MonoBehaviour {
     public Toggle tg2048Nearby;
     public Toggle tgForceLod3;
     public Toggle tgEnableClip;
+    public Toggle tgOnly1Sampler;
 
     public Text   txtDrawCount;
     public Text   txtSupportInstancing;
@@ -30,6 +31,7 @@ public class UIHandler : MonoBehaviour {
         tg2048Nearby.onValueChanged.AddListener(OnTg2048NearbyChanged);
         tgForceLod3.onValueChanged.AddListener(OnForceLod3Changed);
         tgEnableClip.onValueChanged.AddListener(OnTgEnableClipChanged);
+        tgOnly1Sampler.onValueChanged.AddListener(OnTgOnly1SamplerChanged);
     }
 
     private void OnBtnIncBatchClick()
@@ -63,6 +65,11 @@ public class UIHandler : MonoBehaviour {
     private void OnTgEnableClipChanged(bool value)
     {
         testDraw.SetEnableClip(value);
+    }
+
+    private void OnTgOnly1SamplerChanged(bool value)
+    {
+        testDraw.SetOnly1Sampler(value);
     }
 
     private void Update()

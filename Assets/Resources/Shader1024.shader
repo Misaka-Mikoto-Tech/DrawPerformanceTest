@@ -24,7 +24,9 @@
 			#pragma vertex vert
 			#pragma fragment frag
 			#pragma multi_compile_instancing
+			#pragma enable_d3d11_debug_symbols  
 			#pragma multi_compile __ EnableClip
+			#pragma multi_compile __ Only1Sampler
 			
 			#include "UnityCG.cginc"
 
@@ -57,28 +59,33 @@
 			
 			v2f vert (appdata v)
 			{
-				v2f o;
+				v2f o = (v2f)0;
 				o.vertex = UnityObjectToClipPos(v.vertex);
 				
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+#ifndef Only1Sampler
 				o.uv2 = TRANSFORM_TEX(v.uv, _MainTex2);
 				o.uv3 = TRANSFORM_TEX(v.uv, _MainTex3);
 				o.uv4 = TRANSFORM_TEX(v.uv, _MainTex4);
+#endif
 				return o;
 			}
 			
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
+
+#ifdef Only1Sampler
+				fixed4 ret = col * 1.00001;
+#else
 				fixed4 col2 = tex2D(_MainTex2, i.uv2);
 				fixed4 col3 = tex2D(_MainTex3, i.uv3);
 				fixed4 col4 = tex2D(_MainTex4, i.uv4);
 				fixed4 ret = (col + col2 + col3 + col4) * 0.25;
+#endif
+				
 #ifdef EnableClip
-				if(ret.w < 0.01)
-				{
-					discard;
-				}
+				clip(ret.w - 0.01);
 #endif
 				return ret;
 			}
