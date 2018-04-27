@@ -14,8 +14,8 @@
 			Cull Back
 			// Blend SrcAlpha OneMinusSrcAlpha
 			Blend One Zero
-			ZWrite Off
-			ZTest Off
+			ZWrite On
+			ZTest On
 
 			CGPROGRAM
 			#pragma vertex vert
