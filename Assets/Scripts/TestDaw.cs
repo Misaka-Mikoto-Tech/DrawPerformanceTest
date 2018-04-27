@@ -79,6 +79,7 @@ public class TestDaw : MonoBehaviour {
         for(int i = 0, imax = _matrixies.Length; i < imax; i++)
         {
             _matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.1f, i * 0.1f, (CountPerBatch - i)), Quaternion.identity, new Vector3(10f, 10f, 10f));
+            //_matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.1f, i * 0.1f, i), Quaternion.identity, new Vector3(10f, 10f, 10f));
         }
 	}
 

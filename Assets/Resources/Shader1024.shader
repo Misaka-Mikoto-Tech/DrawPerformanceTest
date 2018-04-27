@@ -15,10 +15,10 @@
 		Pass
 		{
 			Cull Back
-			// Blend SrcAlpha OneMinusSrcAlpha
-			Blend One Zero
-			ZWrite On
-			ZTest On
+			Blend SrcAlpha OneMinusSrcAlpha
+			// Blend Off
+			ZWrite Off
+			ZTest Off
 
 			CGPROGRAM
 			#pragma vertex vert
