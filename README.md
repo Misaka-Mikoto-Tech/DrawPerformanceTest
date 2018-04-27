@@ -8,6 +8,9 @@
 ![image](Preview/4.png)
 ![image](Preview/5.png)
 
+#### adreno 630 的 bin layout
+![image](Preview/adrenoBin.jpg)
+
 ## 部分型号帧率测试结果(反复绘制400次)
 ### 高通845(1480 * 720)
 * 4张1024各采样1次
