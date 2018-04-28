@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TestDaw : MonoBehaviour {
     public bool draw2048;
+    public bool draw64;
+    public bool instancing;
     public int batchCount;
 
     public int drawCount { get { return batchCount * CountPerBatch; } }
@@ -11,6 +13,8 @@ public class TestDaw : MonoBehaviour {
     public const int CountPerBatch = 200;
 
     private Mesh _mesh;
+    // _material64 与 _material1024 使用同一个 shader
+    private Material _material64;
     private Material _material1024;
     private Material _material2048;
     private Matrix4x4[] _matrixies;
@@ -59,12 +63,27 @@ public class TestDaw : MonoBehaviour {
         }
     }
 
+    public void InitMatrixes(int order)
+    {
+        if(order == 0) // 正序
+        {
+            for (int i = 0, imax = _matrixies.Length; i < imax; i++)
+                _matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.0001f, i * 0.0001f, i), Quaternion.identity, new Vector3(10f, 10f, 10f));
+        }
+        else
+        {
+            for (int i = 0, imax = _matrixies.Length; i < imax; i++)
+                _matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.0001f, i * 0.0001f, (CountPerBatch - i)), Quaternion.identity, new Vector3(10f, 10f, 10f));
+        }
+    }
+
     void Start () {
 
         Application.targetFrameRate = 1000;
         batchCount = 1;
 
         CreateMesh();
+        _material64 = Resources.Load<Material>("Mat64");
         _material1024 = Resources.Load<Material>("Mat1024");
         _material2048 = Resources.Load<Material>("Mat2048");
         _material2048.DisableKeyword("Enable_2048Nearby");
@@ -76,17 +95,28 @@ public class TestDaw : MonoBehaviour {
 
 
         _matrixies = new Matrix4x4[CountPerBatch];
-        for(int i = 0, imax = _matrixies.Length; i < imax; i++)
-        {
-            _matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.1f, i * 0.1f, (CountPerBatch - i)), Quaternion.identity, new Vector3(10f, 10f, 10f));
-            //_matrixies[i] = Matrix4x4.TRS(new Vector3(i * 0.1f, i * 0.1f, i), Quaternion.identity, new Vector3(10f, 10f, 10f));
-        }
+        InitMatrixes(0);
 	}
 
     void Update()
     {
-        for(int i = 0; i < batchCount; i++)
-            Graphics.DrawMeshInstanced(_mesh, 0, draw2048 ? _material2048 : _material1024, _matrixies);
+        Material mat = _material1024;
+        if (draw2048)
+            mat = _material2048;
+        else if (draw64)
+            mat = _material64;
+
+        for (int i = 0; i < batchCount; i++)
+        {
+            if(instancing)
+                Graphics.DrawMeshInstanced(_mesh, 0, mat, _matrixies);
+            else
+            {
+                for (int j = 0; j < CountPerBatch; j++)
+                    Graphics.DrawMesh(_mesh, _matrixies[j], mat, 0);
+            }
+        }
+            
     }
 
     private void CreateMesh()

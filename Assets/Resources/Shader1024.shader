@@ -9,16 +9,17 @@
 	}
 	SubShader
 	{
-		Tags{ "Queue" = "Transparent" }
+		Tags{ "Queue" = "Geometry" }
+		// Tags{ "Queue" = "Transparent" }
 		LOD 100
 
 		Pass
 		{
 			Cull Back
-			Blend SrcAlpha OneMinusSrcAlpha
-			// Blend Off
-			ZWrite Off
-			ZTest Off
+			// Blend SrcAlpha OneMinusSrcAlpha
+			Blend Off
+			ZWrite On
+			ZTest On
 
 			CGPROGRAM
 			#pragma vertex vert

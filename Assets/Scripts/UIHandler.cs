@@ -12,9 +12,12 @@ public class UIHandler : MonoBehaviour {
     public Toggle tgForceLod3;
     public Toggle tgEnableClip;
     public Toggle tgOnly1Sampler;
+    public Toggle tgInstancing;
+    public Toggle tg64x64Tex;
 
     public Text   txtDrawCount;
     public Text   txtSupportInstancing;
+    public Dropdown ddZOrder;
 
     public TestDaw testDraw;
 
@@ -32,6 +35,9 @@ public class UIHandler : MonoBehaviour {
         tgForceLod3.onValueChanged.AddListener(OnForceLod3Changed);
         tgEnableClip.onValueChanged.AddListener(OnTgEnableClipChanged);
         tgOnly1Sampler.onValueChanged.AddListener(OnTgOnly1SamplerChanged);
+        tgInstancing.onValueChanged.AddListener(OnTgInstancingChanged);
+        tg64x64Tex.onValueChanged.AddListener(OnTg64x64TexChanged);
+        ddZOrder.onValueChanged.AddListener(OnDdZOrderChanged);
     }
 
     private void OnBtnIncBatchClick()
@@ -71,6 +77,23 @@ public class UIHandler : MonoBehaviour {
     {
         testDraw.SetOnly1Sampler(value);
     }
+
+    private void OnDdZOrderChanged(int idx)
+    {
+        testDraw.InitMatrixes(idx);
+    }
+
+    private void OnTgInstancingChanged(bool value)
+    {
+        testDraw.instancing = value;
+    }
+
+    private void OnTg64x64TexChanged(bool value)
+    {
+        testDraw.draw64 = value;
+    }
+
+
 
     private void Update()
     {
