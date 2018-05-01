@@ -14,6 +14,7 @@ public class UIHandler : MonoBehaviour {
     public Toggle tgOnly1Sampler;
     public Toggle tgInstancing;
     public Toggle tg64x64Tex;
+    public Toggle tgNoTexture;
 
     public Text   txtDrawCount;
     public Text   txtSupportInstancing;
@@ -37,6 +38,8 @@ public class UIHandler : MonoBehaviour {
         tgOnly1Sampler.onValueChanged.AddListener(OnTgOnly1SamplerChanged);
         tgInstancing.onValueChanged.AddListener(OnTgInstancingChanged);
         tg64x64Tex.onValueChanged.AddListener(OnTg64x64TexChanged);
+        tgNoTexture.onValueChanged.AddListener(OnTgNoTextureChanged);
+
         ddZOrder.onValueChanged.AddListener(OnDdZOrderChanged);
     }
 
@@ -93,7 +96,10 @@ public class UIHandler : MonoBehaviour {
         testDraw.draw64 = value;
     }
 
-
+    private void OnTgNoTextureChanged(bool value)
+    {
+        testDraw.SetNoTexture(value);
+    }
 
     private void Update()
     {

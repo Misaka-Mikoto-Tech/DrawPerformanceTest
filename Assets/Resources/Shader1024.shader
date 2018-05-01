@@ -28,6 +28,7 @@
 			#pragma enable_d3d11_debug_symbols  
 			#pragma multi_compile __ EnableClip
 			#pragma multi_compile __ Only1Sampler
+			#pragma multi_compile __ NoTexture
 			
 			#include "UnityCG.cginc"
 
@@ -75,18 +76,24 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
+				fixed4 ret = fixed4(0, 0, 0, 1);
 
-#ifdef Only1Sampler
-				fixed4 ret = col * 1.00001;
-#else
+#ifndef NoTexture
+	#ifdef Only1Sampler
+				ret = col * 1.00001;
+	#else
 				fixed4 col2 = tex2D(_MainTex2, i.uv2);
 				fixed4 col3 = tex2D(_MainTex3, i.uv3);
 				fixed4 col4 = tex2D(_MainTex4, i.uv4);
-				fixed4 ret = (col + col2 + col3 + col4) * 0.25;
+				ret = (col + col2 + col3 + col4) * 0.25;
+	#endif
+#else
+				half2 uv = i.uv;
+				ret = fixed4(uv.x, uv.y, 0, uv.x * uv.y);
 #endif
 				
 #ifdef EnableClip
-				clip(ret.w - 0.01);
+				clip(ret.w - 0.02);
 #endif
 				return ret;
 			}

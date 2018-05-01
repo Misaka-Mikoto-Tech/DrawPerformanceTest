@@ -63,6 +63,20 @@ public class TestDaw : MonoBehaviour {
         }
     }
 
+    public void SetNoTexture(bool val)
+    {
+        if (val)
+        {
+            _material1024.EnableKeyword("NoTexture");
+            _material2048.EnableKeyword("NoTexture");
+        }
+        else
+        {
+            _material1024.DisableKeyword("NoTexture");
+            _material2048.DisableKeyword("NoTexture");
+        }
+    }
+
     public void InitMatrixes(int order)
     {
         if(order == 0) // 正序
@@ -92,6 +106,8 @@ public class TestDaw : MonoBehaviour {
         _material2048.DisableKeyword("EnableClip");
         _material1024.DisableKeyword("Only1Sampler");
         _material2048.DisableKeyword("Only1Sampler");
+        _material1024.DisableKeyword("NoTexture");
+        _material2048.DisableKeyword("NoTexture");
 
 
         _matrixies = new Matrix4x4[CountPerBatch];
@@ -108,10 +124,14 @@ public class TestDaw : MonoBehaviour {
 
         for (int i = 0; i < batchCount; i++)
         {
-            if(instancing)
+            if (instancing)
+            {
+                mat.enableInstancing = true;
                 Graphics.DrawMeshInstanced(_mesh, 0, mat, _matrixies);
+            }
             else
             {
+                mat.enableInstancing = false; ;
                 for (int j = 0; j < CountPerBatch; j++)
                     Graphics.DrawMesh(_mesh, _matrixies[j], mat, 0);
             }
