@@ -142,21 +142,42 @@ public class TestDaw : MonoBehaviour {
     private void CreateMesh()
     {
         _mesh = new Mesh();
-        Vector3[] verts = new Vector3[4];
-        verts[0] = new Vector3(0, 0, 0);
-        verts[1] = new Vector3(0, 1, 0);
-        verts[2] = new Vector3(1, 0, 0);
-        verts[3] = new Vector3(1, 1, 0);
+
+        Vector3[] verts = new Vector3[11 * 11];
+        for(int x = 0; x < 11; x++)
+            for(int y = 0; y < 11; y++)
+                verts[y * 11 + x] = new Vector3(x * 0.1f, y * 0.1f, 0);
         _mesh.vertices = verts;
 
-        Vector2[] uvs = new Vector2[4];
-        uvs[0] = new Vector2(0, 0);
-        uvs[1] = new Vector2(0, 1);
-        uvs[2] = new Vector2(1, 0);
-        uvs[3] = new Vector2(1, 1);
+        Vector2[] uvs = new Vector2[11 * 11];
+        for (int x = 0; x < 11; x++)
+            for (int y = 0; y < 11; y++)
+                uvs[y * 11 + x] = new Vector3(x * 0.1f, y * 0.1f, 0);
         _mesh.uv = uvs;
 
-        int[] indices = new int[6] { 0, 1, 2, 3, 2, 1 };
+        int[] indices = new int[600];
+
+        // 当前格子使用到的 4 个顶点(从左下角沿N型排列)
+        int[] vertIdxies = new int[4];
+        for (int x = 0; x < 10; x++)
+        {
+            for(int y = 0; y < 10; y++)
+            {
+                vertIdxies[0] = y * 11 + x;
+                vertIdxies[1] = (y + 1) * 11 + x;
+                vertIdxies[2] = y * 11 + x + 1;
+                vertIdxies[3] = (y + 1) * 11 + x + 1;
+
+                int quadIdx = (y * 10 + x) * 6;
+                indices[quadIdx + 0] = vertIdxies[0];
+                indices[quadIdx + 1] = vertIdxies[1];
+                indices[quadIdx + 2] = vertIdxies[2];
+                indices[quadIdx + 3] = vertIdxies[3];
+                indices[quadIdx + 4] = vertIdxies[2];
+                indices[quadIdx + 5] = vertIdxies[1];
+            }
+        }
+
         _mesh.triangles = indices;
         _mesh.UploadMeshData(true);
     }
