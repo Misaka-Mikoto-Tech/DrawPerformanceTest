@@ -75,10 +75,10 @@
 			
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 col = tex2D(_MainTex, i.uv);
 				fixed4 ret = fixed4(0, 0, 0, 1);
 
 #ifndef NoTexture
+				fixed4 col = tex2D(_MainTex, i.uv);
 	#ifdef Only1Sampler
 				ret = col * 1.00001;
 	#else
@@ -86,6 +86,7 @@
 				fixed4 col3 = tex2D(_MainTex3, i.uv3);
 				fixed4 col4 = tex2D(_MainTex4, i.uv4);
 				ret = (col + col2 + col3 + col4) * 0.25;
+				ret.a = i.uv.x * i.uv.y;
 	#endif
 #else
 				half2 uv = i.uv;
@@ -93,7 +94,7 @@
 #endif
 				
 #ifdef EnableClip
-				clip(ret.w - 0.02);
+				clip(ret.w - 0.5);
 #endif
 				return ret;
 			}
