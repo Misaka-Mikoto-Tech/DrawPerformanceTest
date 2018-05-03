@@ -6,6 +6,10 @@
 		_MainTex2("Texture", 2D) = "white" {}
 		_MainTex3("Texture", 2D) = "white" {}
 		_MainTex4("Texture", 2D) = "white" {}
+		[Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend ("Blend mode", Float) = 5
+		[Enum(UnityEngine.Rendering.BlendMode)] _DstBlend ("Blend mode", Float) = 1
+		[Enum(UnityEngine.Rendering.CompareFunction)] _ZTest("ZTest", Float) = 4
+		[Enum(Off, 0, On, 1)] _ZWrite ("ZWrite", Float) = 0
 	}
 	SubShader
 	{
@@ -16,10 +20,9 @@
 		Pass
 		{
 			Cull Back
-			// Blend SrcAlpha OneMinusSrcAlpha
-			Blend Off
-			ZWrite On
-			ZTest On
+			Blend [_SrcBlend] [_DstBlend]
+			ZWrite [_ZWrite]
+			ZTest [_ZTest]
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -86,7 +89,6 @@
 				fixed4 col3 = tex2D(_MainTex3, i.uv3);
 				fixed4 col4 = tex2D(_MainTex4, i.uv4);
 				ret = (col + col2 + col3 + col4) * 0.25;
-				ret.a = i.uv.x * i.uv.y;
 	#endif
 #else
 				half2 uv = i.uv;
@@ -94,7 +96,7 @@
 #endif
 				
 #ifdef EnableClip
-				clip(ret.w - 0.5);
+				clip(ret.w - 0.99);
 #endif
 				return ret;
 			}

@@ -19,6 +19,7 @@ public class UIHandler : MonoBehaviour {
     public Text   txtDrawCount;
     public Text   txtSupportInstancing;
     public Dropdown ddZOrder;
+    public Dropdown ddRenderMode;
 
     public TestDaw testDraw;
 
@@ -41,6 +42,7 @@ public class UIHandler : MonoBehaviour {
         tgNoTexture.onValueChanged.AddListener(OnTgNoTextureChanged);
 
         ddZOrder.onValueChanged.AddListener(OnDdZOrderChanged);
+        ddRenderMode.onValueChanged.AddListener(OnDDRenderModeChanged);
     }
 
     private void OnBtnIncBatchClick()
@@ -99,6 +101,11 @@ public class UIHandler : MonoBehaviour {
     private void OnTgNoTextureChanged(bool value)
     {
         testDraw.SetNoTexture(value);
+    }
+
+    private void OnDDRenderModeChanged(int idx)
+    {
+
     }
 
     private void Update()
