@@ -84,32 +84,1248 @@
 				// if(i.switch1.w > 0)
 				// 	col = tex2D(_Tex7, i.uv);
 
-				if(i.switch0.x > 0)
-					col = dot(i.switch0, i.uv.xyxy);
-				if(i.switch0.y > 0)
-					col = dot(i.switch0, i.uv.xyxx);
-				if(i.switch0.z > 0)
-					col = dot(i.switch0, i.uv.xxxx);
-				if(i.switch0.w > 0)
-					col = dot(i.switch0, i.uv.yyyy);
-				if(i.switch1.x > 0)
-					col = dot(i.switch1, i.uv.xyxy);
-				if(i.switch1.y > 0)
-					col = dot(i.switch1, i.uv.xyxx);
-				if(i.switch1.z > 0)
-					col = dot(i.switch1, i.uv.xxxx);
-				if(i.switch1.w > 0)
-					col = dot(i.switch0, i.uv.yyyy);
-#else
+				// if(i.switch0.x > 0)
+				// 	col = dot(i.switch0, i.uv.xyxy);
+				// if(i.switch0.y > 0)
+				// 	col = dot(i.switch0, i.uv.xyxx);
+				// if(i.switch0.z > 0)
+				// 	col = dot(i.switch0, i.uv.xxxx);
+				// if(i.switch0.w > 0)
+				// 	col = dot(i.switch0, i.uv.yyyy);
+				// if(i.switch1.x > 0)
+				// 	col = dot(i.switch1, i.uv.xyxy);
+				// if(i.switch1.y > 0)
+				// 	col = dot(i.switch1, i.uv.xyxx);
+				// if(i.switch1.z > 0)
+				// 	col = dot(i.switch1, i.uv.xxxx);
+				// if(i.switch1.w > 0)
+				// 	col = dot(i.switch0, i.uv.yyyy);
 
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);	
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);	
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);	
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);	
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				if(i.switch0.x < -10)
+					col = fixed4(1,1,1,1);
+				if(i.switch0.y < -100)
+					col = fixed4(1,0,1,1);
+				if(i.switch0.z < -11)
+					col = fixed4(1,1,0,1);
+				if(i.switch0.w < -12)
+					col = fixed4(1,0,0,1);
+				
+#else
+				// col += i.switch0;
 				col += dot(i.switch0, i.uv.xyxy);
-				col += dot(i.switch0, i.uv.xyxx);
-				col += dot(i.switch0, i.uv.xxxx);
-				col += dot(i.switch0, i.uv.yyyy);
-				col += dot(i.switch1, i.uv.xyxy);
 				col += dot(i.switch1, i.uv.xyxx);
-				col += dot(i.switch1, i.uv.xxxx);
-				col += dot(i.switch1, i.uv.yyyy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				col += dot(i.switch0, i.uv.xxyx);
+				col += dot(i.switch0, i.uv.xyxy);
+				col += dot(i.switch1, i.uv.xyxx);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.xyyx);
+				col += dot(i.switch1, i.uv.xyxy);
+				col += dot(i.switch0, i.uv.xxxy);
+				col += dot(i.switch1, i.uv.yyxy);
+				
+
+				// col += dot(i.switch0, i.uv.xyxy);
+				// col += dot(i.switch0, i.uv.xyxx);
+				// col += dot(i.switch1, i.uv.xxxx);
+				// col += dot(i.switch0, i.uv.yyyy);
+				// col += dot(i.switch1, i.uv.xyxy);
+				// col += dot(i.switch1, i.uv.xyxx);
+				// col += dot(i.switch1, i.uv.xxxx);
+				// col += dot(i.switch1, i.uv.yyyy);
 
 				// col += tex2D(_Tex0, i.uv) * i.switch0.x;
 				// col += tex2D(_Tex1, i.uv) * i.switch0.y;
