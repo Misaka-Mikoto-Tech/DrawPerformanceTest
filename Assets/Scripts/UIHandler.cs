@@ -105,7 +105,7 @@ public class UIHandler : MonoBehaviour {
 
     private void OnDDRenderModeChanged(int idx)
     {
-
+        testDraw.ChangeRenderMode(idx);
     }
 
     private void Update()

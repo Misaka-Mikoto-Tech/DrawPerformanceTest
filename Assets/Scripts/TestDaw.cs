@@ -77,6 +77,14 @@ public class TestDaw : MonoBehaviour {
         }
     }
 
+    public void ChangeRenderMode(int idx)
+    {
+        RenderingMode renderMode = idx == 0 ? RenderingMode.Opaque : RenderingMode.Transparent;
+        Utils.SetMaterialRenderingMode(_material64, renderMode);
+        Utils.SetMaterialRenderingMode(_material1024, renderMode);
+        Utils.SetMaterialRenderingMode(_material2048, renderMode);
+    }
+
     public void InitMatrixes(int order)
     {
         if(order == 0) // 正序
